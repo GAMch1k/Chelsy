@@ -23,6 +23,6 @@ while True:
     try:
         write_to_file(r.recognize_google(audio, language="ru-RU"))
     except sr.UnknownValueError:
-        print("Робот не расслышал фразу")
+        print("Я не расслышала фразу")
     except sr.RequestError as e:
         print("Ошибка сервиса; {0}".format(e))
